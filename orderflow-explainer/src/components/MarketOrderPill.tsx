@@ -1,0 +1,2 @@
+import {theme as t} from '../config/theme';
+export const MarketOrderPill=({side,quantity,x=0}:{side:'buy'|'sell';quantity:number;x?:number})=><div style={{translate:`${x}px 0px`,display:'inline-flex',gap:24,padding:'18px 28px',background:side==='buy'?t.ask:t.aggressiveSell,color:t.background,fontSize:34,fontWeight:800,borderRadius:60}}>MARKET {side.toUpperCase()} <span style={{fontFamily:t.mono}}>{Math.round(quantity)}</span> →</div>;

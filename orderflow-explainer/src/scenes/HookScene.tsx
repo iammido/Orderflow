@@ -1,0 +1,2 @@
+import {spring,useCurrentFrame,useVideoConfig} from 'remotion';import {SceneFrame,Caption} from '../components/SceneFrame';import {PriceLadder} from '../components/PriceLadder';import {domData} from '../config/data';import {theme as t} from '../config/theme';
+export const HookScene=()=>{const f=useCurrentFrame();const {fps}=useVideoConfig();return <SceneFrame scene="hook"><div style={{opacity:.45,scale:1+spring({frame:f,fps,config:{damping:200}})*.025}}><PriceLadder data={domData} compact/></div><Caption color={t.ask}>LIQUIDITY. AGGRESSION. RESPONSE.</Caption></SceneFrame>};

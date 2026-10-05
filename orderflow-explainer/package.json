@@ -1,0 +1,6 @@
+{
+  "name": "orderflow-explainer", "version": "1.0.0", "private": true,
+  "scripts": {"start": "remotion studio --no-open", "typecheck": "tsc --noEmit", "render": "remotion render src/index.ts OrderflowExplainer"},
+  "dependencies": {"@remotion/cli": "4.0.532", "remotion": "4.0.532", "react": "19.3.0", "react-dom": "19.3.0"},
+  "devDependencies": {"typescript": "7.0.2", "@types/react": "19.3.0", "@types/react-dom": "19.3.0"}
+}

@@ -1,0 +1,2 @@
+import {SceneFrame,Caption} from '../components/SceneFrame';import {FootprintCandle} from '../components/FootprintCandle';import {buyAbsorptionData} from '../config/data';import {labels} from '../config/content';import {theme as t} from '../config/theme';
+export const AbsorptionIntroScene=()=> <SceneFrame scene="absorptionIntro"><FootprintCandle rows={buyAbsorptionData} compact/><Caption>We know who was aggressive.<br/>But did that aggression move price?</Caption><Caption color={t.ask}>{labels.context}</Caption></SceneFrame>;

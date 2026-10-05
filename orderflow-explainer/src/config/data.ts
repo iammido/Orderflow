@@ -1,0 +1,10 @@
+export type FootprintData={price:number;bid:number;ask:number};
+export type BookData={prices:number[];bids:Record<string,number>;asks:Record<string,number>};
+export const domData:BookData={prices:[100.04,100.03,100.02,100.01,100,99.99,99.98,99.97],asks:{'100.04':210,'100.03':180,'100.02':150,'100.01':120},bids:{'100.00':85,'99.99':140,'99.98':220,'99.97':310}};
+export const sellDomData:BookData={prices:[100.04,100.03,100.02,100.01,100,99.99,99.98,99.97],asks:{'100.04':210,'100.03':180,'100.02':150},bids:{'100.01':100,'100.00':130,'99.99':200,'99.98':220,'99.97':310}};
+export const executions={marketBuy:{quantity:150,firstPrice:100.01,firstFill:120,secondPrice:100.02,secondFill:30},marketSell:{quantity:160,firstPrice:100.01,firstFill:100,secondPrice:100,secondFill:60}};
+export const footprintData:FootprintData[]=[{price:100.03,bid:18,ask:42},{price:100.02,bid:25,ask:30},{price:100.01,bid:100,ask:120},{price:100,bid:60,ask:34},{price:99.99,bid:22,ask:18}];
+export const buyAbsorptionData:FootprintData[]=[{price:100.05,bid:24,ask:65},{price:100.04,bid:32,ask:140},{price:100.03,bid:38,ask:280},{price:100.02,bid:45,ask:110},{price:100.01,bid:52,ask:74}];
+export const sellAbsorptionData:FootprintData[]=[{price:100.02,bid:54,ask:40},{price:100.01,bid:110,ask:32},{price:100,bid:170,ask:26},{price:99.99,bid:310,ask:35},{price:99.98,bid:145,ask:30}];
+export const buyerExhaustionData:FootprintData[]=[{price:100.01,bid:40,ask:260},{price:100.02,bid:35,ask:210},{price:100.03,bid:30,ask:140},{price:100.04,bid:24,ask:70},{price:100.05,bid:18,ask:22}];
+export const sellerExhaustionData:FootprintData[]=[{price:100.05,bid:250,ask:42},{price:100.04,bid:190,ask:38},{price:100.03,bid:125,ask:34},{price:100.02,bid:65,ask:30},{price:100.01,bid:20,ask:24}];

@@ -1,0 +1,2 @@
+import {theme as t} from '../config/theme';
+export const PriceProgress=({price,direction,stalled=false}:{price?:number;direction:'up'|'down';stalled?:boolean})=><div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:22,fontSize:34}}><span style={{color:t.muted}}>PRICE RESPONSE</span><span style={{fontFamily:t.mono,color:t.text}}>{price?.toFixed(2)} {direction==='up'?'↑':'↓'} {stalled?'STALLS':'EXTENDS'}</span></div>;

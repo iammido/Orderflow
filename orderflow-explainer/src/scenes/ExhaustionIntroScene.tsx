@@ -1,0 +1,2 @@
+import {SceneFrame,Caption} from '../components/SceneFrame';import {FootprintCandle} from '../components/FootprintCandle';import {buyerExhaustionData} from '../config/data';import {theme as t} from '../config/theme';
+export const ExhaustionIntroScene=()=> <SceneFrame scene="exhaustionIntro"><FootprintCandle rows={buyerExhaustionData} compact/><Caption>What if the opposite happens?</Caption><Caption color={t.ask}>PRICE KEEPS MOVING…<br/>…BUT AGGRESSION DISAPPEARS.</Caption></SceneFrame>;

@@ -1,0 +1,1 @@
+{"name":"orderflow-talks-reel","private":true,"version":"1.0.0","scripts":{"start":"remotion studio src/index.ts --no-open","render":"remotion render src/index.ts OrderflowReel reel.mp4"},"dependencies":{"@remotion/cli":"4.0.532","remotion":"4.0.532","react":"19.3.0","react-dom":"19.3.0"},"devDependencies":{"typescript":"7.0.2","@types/react":"19.3.0"}}

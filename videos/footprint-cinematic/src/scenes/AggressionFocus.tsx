@@ -1,0 +1,2 @@
+import React from 'react';import {ConceptTitle,ConceptFrame,FootprintExample,BuyPressure} from '../concept-components';import {aggressionFootprintData} from '../concept-data';import {theme as t} from '../config';
+export const AggressionFocus=()=> <ConceptFrame><ConceptTitle kind="aggression"/><FootprintExample data={aggressionFootprintData} kind="aggression"/><BuyPressure/><div style={{position:'absolute',left:178,top:1395,fontSize:34,color:t.buyers}}>AGGRESSIVE BUYERS → ASK</div></ConceptFrame>;

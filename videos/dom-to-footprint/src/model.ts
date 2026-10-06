@@ -1,0 +1,11 @@
+import {Easing,interpolate} from 'remotion';
+export const theme={background:'#080E16',panel:'#111C28',text:'#EEEFEA',muted:'#91A0AC',buy:'#67B9B1',sell:'#C77A66',amber:'#D9B778',grid:'#293544'};
+export const prices=[101.05,101.00,100.95,100.90,100.85,100.80,100.75];
+export const initialBook={bid:[0,0,0,0,180,350,620],ask:[320,220,150,0,0,0,0]};
+export const executionBook={bid:[0,0,0,0,250,400,600],ask:[300,200,100,0,0,0,0]};
+export const executions=[{price:100.95,quantity:100,at:840,replayAt:1554},{price:101.00,quantity:150,at:1020,replayAt:1644}];
+export const timeline={setup:630,first:780,second:960,explain:1140,freeze:1260,morph:1380,replay:1530,compare:1740,flow:1920,final:2100,end:2220};
+export const ease=(f:number,start:number,end:number)=>interpolate(f,[start,end],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp',easing:Easing.bezier(.16,1,.3,1)});
+export const fillQuantity=(frame:number,event:typeof executions[number])=>Math.round(event.quantity*ease(frame,event.at,event.at+18));
+export const ledger=(frame:number)=>{const first=fillQuantity(frame,executions[0]),second=fillQuantity(frame,executions[1]);return {first,second,remaining:250-first-second,ltp:second>0?101.00:first>0?100.95:100.90,asks:executionBook.ask.map((v,i)=>v-(i===2?first:i===1?second:0))};};
+export const footprintAsk=(frame:number,index:number)=>executions.filter(e=>e.price===prices[index]).reduce((sum,e)=>sum+Math.round(e.quantity*ease(frame,e.replayAt,e.replayAt+18)),0);

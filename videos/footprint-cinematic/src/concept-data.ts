@@ -1,0 +1,3 @@
+export const volumeFootprintData=[{price:4624.75,bid:92,ask:108},{price:4624.50,bid:135,ask:165},{price:4624.25,bid:188,ask:252},{price:4624.00,bid:520,ask:640},{price:4623.75,bid:176,ask:224},{price:4623.50,bid:113,ask:127},{price:4623.25,bid:68,ask:92}];
+export const aggressionFootprintData=[{price:5182.75,bid:48,ask:356},{price:5182.50,bid:62,ask:642},{price:5182.25,bid:75,ask:1080},{price:5182.00,bid:91,ask:1404},{price:5181.75,bid:84,ask:972},{price:5181.50,bid:58,ask:528},{price:5181.25,bid:43,ask:284}];
+export const imbalanceFootprintData=[{price:6038.75,bid:118,ask:130},{price:6038.50,bid:34,ask:408},{price:6038.25,bid:156,ask:174},{price:6038.00,bid:204,ask:220},{price:6037.75,bid:28,ask:336},{price:6037.50,bid:125,ask:142},{price:6037.25,bid:86,ask:94}];

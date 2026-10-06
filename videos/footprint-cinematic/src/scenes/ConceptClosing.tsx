@@ -1,0 +1,2 @@
+import React from 'react';import {ConceptFrame,FootprintExample} from '../concept-components';import {imbalanceFootprintData} from '../concept-data';import {Closing} from './Closing';import {theme as t} from '../config';
+export const ConceptClosing=()=> <ConceptFrame closing><FootprintExample data={imbalanceFootprintData} kind="closing"/><Closing/><div style={{position:'absolute',left:84,bottom:207,color:t.muted,fontSize:26,letterSpacing:3}}>ORDERFL0WTALKS</div></ConceptFrame>;

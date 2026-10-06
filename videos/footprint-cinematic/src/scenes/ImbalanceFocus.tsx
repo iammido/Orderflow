@@ -1,0 +1,2 @@
+import React from 'react';import {ConceptTitle,ConceptFrame,FootprintExample} from '../concept-components';import {imbalanceFootprintData} from '../concept-data';import {theme as t} from '../config';
+export const ImbalanceFocus=()=> <ConceptFrame><ConceptTitle kind="imbalance"/><FootprintExample data={imbalanceFootprintData} kind="imbalance"/><div style={{position:'absolute',left:178,top:1395,fontSize:34,color:t.amber}}>SELECTED LEVELS · ASK = 12 × BID</div></ConceptFrame>;

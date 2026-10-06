@@ -1,0 +1,38 @@
+{
+  "pass": true,
+  "first": {
+    "first": 100,
+    "second": 0,
+    "remaining": 150,
+    "ltp": 100.95,
+    "asks": [
+      300,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "second": {
+    "first": 100,
+    "second": 150,
+    "remaining": 0,
+    "ltp": 101,
+    "asks": [
+      300,
+      50,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "footprint": {
+    "100.95 Ask": 100,
+    "101.00 Ask": 150
+  },
+  "conservationFrames": 2280
+}

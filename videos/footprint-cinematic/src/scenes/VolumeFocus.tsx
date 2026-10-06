@@ -1,0 +1,2 @@
+import React from 'react';import {ConceptTitle,ConceptFrame,FootprintExample} from '../concept-components';import {volumeFootprintData} from '../concept-data';import {theme as t} from '../config';
+export const VolumeFocus=()=> <ConceptFrame><ConceptTitle kind="volume"/><FootprintExample data={volumeFootprintData} kind="volume"/><div style={{position:'absolute',left:178,top:1395,fontSize:34,color:t.amber}}>ONE PRICE. MUCH MORE TRADED.</div></ConceptFrame>;

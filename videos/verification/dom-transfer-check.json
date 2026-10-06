@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "transfers": [
+    {
+      "price": 100.95,
+      "quantity": 100,
+      "at": 840,
+      "replayAt": 1554,
+      "depart": 186,
+      "land": 258
+    },
+    {
+      "price": 101,
+      "quantity": 150,
+      "at": 1020,
+      "replayAt": 1644,
+      "depart": 336,
+      "land": 408
+    }
+  ],
+  "recordedTotal": 250
+}

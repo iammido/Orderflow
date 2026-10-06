@@ -1,0 +1,16 @@
+import React from 'react';import {useCurrentFrame} from 'remotion';import {SceneTitle} from './graphics';import {theme as t} from './model';
+export const IntroduceDOM=()=>{const f=useCurrentFrame();return <SceneTitle lines={f<90?['DEPTH OF MARKET']:['DOM']} subtitle="Orders waiting to trade"/>};
+export const ExplainPrices=()=> <SceneTitle lines={['THE PRICE LADDER.']} subtitle="Each row is a different price level." color={t.amber}/>;
+export const LimitSellers=()=> <SceneTitle lines={['SELLERS WAIT','ABOVE PRICE.']} subtitle="Resting limit sell orders" color={t.sell}/>;
+export const LimitBuyers=()=> <SceneTitle lines={['BUYERS WAIT','BELOW PRICE.']} subtitle="Resting limit buy orders" color={t.buy}/>;
+export const LastPrice=()=> <SceneTitle lines={['LTP — LAST','TRADED PRICE.']} subtitle="Where the most recent transaction happened." color={t.amber}/>;
+export const SetupBuy=()=> <SceneTitle lines={['MARKET BUY:','250 CONTRACTS.']} subtitle="A market order buys immediately. Simplified example." color={t.buy}/>;
+export const FirstFill=()=>{const f=useCurrentFrame();return f<78?<SceneTitle lines={['BEST ASK FIRST.']} subtitle="100 contracts are offered at 100.95." color={t.sell}/>:<SceneTitle lines={['100 FILLED.','150 STILL TO BUY.']} subtitle="100.95 sellers: 100 → 0. LTP: 100.90 → 100.95." color={t.buy}/>};
+export const SecondFill=()=>{const f=useCurrentFrame();return f<78?<SceneTitle lines={['NEXT: 101.00.']} subtitle="150 remaining. 200 sellers available." color={t.sell}/>:<SceneTitle lines={['ORDER FILLED.']} subtitle="150 executed here. 50 sellers remain. LTP: 101.00." color={t.buy}/>};
+export const WhyPriceMoved=()=>{const f=useCurrentFrame();return <SceneTitle lines={f<60?['MARKET ORDERS','CONSUME LIQUIDITY.']:['PRICE MOVES TO','THE NEXT LEVEL.']} subtitle="250 bought across the two best available prices." color={t.amber}/>};
+export const RememberTrades=()=> <SceneTitle lines={['REMEMBER','THESE TWO TRADES.']} subtitle="100 @ 100.95 and 150 @ 101.00. Both have happened." color={t.amber}/>;
+export const IntoFootprint=()=> <SceneTitle lines={['THE SAME LADDER.','A DIFFERENT VIEW.']} subtitle="DOM: waiting orders. Footprint: completed trades." color={t.buy}/>;
+export const PrintTrades=()=>{const f=useCurrentFrame();return <SceneTitle lines={['MARKET BUYS','PRINT ON THE ASK.']} subtitle={f<94?'Replay: 100 bought at 100.95.':'Replay: 150 bought at 101.00.'} color={t.buy}/>};
+export const ShowConnection=()=> <SceneTitle lines={['THE SAME TRADES.','TWO CONNECTED VIEWS.']} subtitle="Follow the two highlighted executions into the Ask." color={t.amber}/>;
+export const FinalConcept=()=> <SceneTitle lines={['DOM → EXECUTION','→ FOOTPRINT']} subtitle="Waiting orders → market fills → recorded trades." color={t.buy}/>;
+export const FinalHold=()=> <SceneTitle lines={['THIS IS HOW A','FOOTPRINT IS BUILT.']} color={t.amber}/>;

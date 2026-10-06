@@ -9,3 +9,7 @@ Examples are editable in `src/config.ts`. Each scene is individually available i
 Buying/selling absorption describes the aggressive side being absorbed. Passive participants are inferred. All values are synthetic teaching examples, not a live feed or trade signal.
 
 Animations are frame-driven for deterministic Remotion playback and export.
+
+## Additional Remotion teaching videos
+
+See [videos](videos/README.md) for the editable cinematic introduction and the DOM-to-footprint candle lesson, including MP4 downloads.

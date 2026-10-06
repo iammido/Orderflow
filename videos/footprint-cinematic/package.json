@@ -1,0 +1,24 @@
+{
+  "name": "orderflow-footprint-cinematic",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "remotion studio src/index.ts --no-open --port=3020",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts FootprintIntroduction out/orderflow-footprint-cinematic.mp4 --image-format=png --color-space=bt709",
+    "postinstall": "node ../setup-fonts.cjs ."
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "remotion": "4.0.532",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  }
+}

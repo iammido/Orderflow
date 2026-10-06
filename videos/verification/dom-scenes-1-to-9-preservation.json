@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "frames": [
+    {
+      "frame": 0,
+      "identical": true
+    },
+    {
+      "frame": 90,
+      "identical": true
+    },
+    {
+      "frame": 330,
+      "identical": true
+    },
+    {
+      "frame": 570,
+      "identical": true
+    },
+    {
+      "frame": 720,
+      "identical": true
+    },
+    {
+      "frame": 870,
+      "identical": true
+    },
+    {
+      "frame": 1050,
+      "identical": true
+    },
+    {
+      "frame": 1200,
+      "identical": true
+    },
+    {
+      "frame": 1259,
+      "identical": true
+    }
+  ]
+}

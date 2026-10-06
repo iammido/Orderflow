@@ -1,0 +1,7 @@
+node_modules/
+out/
+
+# Recreated from the local licensed Windows font installation
+public/segoeui.ttf
+public/seguibl.ttf
+public/consola.ttf

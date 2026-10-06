@@ -4,3 +4,6 @@ dist/
 out/
 *.mp4
 *.log
+
+# Saved video deliverables
+!videos/exports/*.mp4

@@ -1,0 +1,24 @@
+{
+  "name": "orderflow-dom-to-footprint",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "remotion studio src/index.ts --no-open --port=3030",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts DOMToFootprint out/DOM-Market-Orders-Footprint.mp4 --image-format=png --color-space=bt709 --concurrency=1 --crf=16",
+    "postinstall": "node ../setup-fonts.cjs ."
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "remotion": "4.0.532",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  }
+}
